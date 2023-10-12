@@ -3,7 +3,9 @@ package main
 import "fmt";
 
 func main(){
-	var list = [4]string{"nama","saya"};
+	var list = []string{"nama","saya"};
 
-	fmt.Print(list);
+	for i := 0; i < len(list); i++ {
+		fmt.Print(list[i])
+	}
 }
